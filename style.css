@@ -1,0 +1,1011 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/*Body*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+    text-transform: capitalize;
+    font-family: mv boli;
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+/*Body*/
+
+/* NavBar */
+.header{
+    padding: 1rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #1d1d23;
+    box-shadow: 0px 3px 5px 0px #fac031;
+    width:100%;
+}
+.logo img{
+    width: 60px;
+}
+.navbar a{
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+.navbar a:hover{
+    color: #fac031;
+}
+.icons div{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: none;
+}
+.icons div:hover{
+    cursor: pointer;
+}
+.icon i{
+    font-size: 2rem;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icon i:hover{
+    color: #fac031;
+}
+.navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.search{
+    visibility: hidden;
+}
+/* NavBar */
+
+/* Home */
+.home{
+    padding: 1rem 7%;
+    background: url(images/background.png);
+    min-height: 100vh;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 150px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.home-inner-content{
+    flex: 1 1 45rem;
+}
+.home-image{
+    width: 100%;
+    position: relative;
+}
+.home-image img{
+    width: 100%;
+    position: absolute;
+    transform: translate(0%, -40%);
+    animation: myMove 5s infinite ease-in-out;
+}
+@keyframes myMove {
+    0%   {top: 0px;}
+    50%  {top: 15px;}
+    75%  {top: 10px;}
+    100% {top: 0px;}
+}
+.home-text-content{
+    padding: 0 8rem;
+}
+.home-text-content h1{
+    font-size: 4.5rem;
+    color: #fac031;
+    font-weight: bold;
+}
+.home-text-content p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.home-text-content a{
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid #fac031;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 1.7rem;
+    display: inline-block;
+    font-weight: bold;
+}
+.home-text-content a:hover{
+    transform: scale(1.1);
+    background: #fac031;
+    border: 1px solid white;
+}
+/* Home */
+
+/* About */
+.about{
+    padding: 2rem 7%;
+    background: #1d1d23;
+}
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.about-content{
+    flex: 1 1 45rem;
+}
+.about-inner-content{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about-content .about-inner-content img{
+    width: 80%;
+    margin-left: 100px;
+}
+.about-text-content{
+    padding: 0 4rem;
+}
+.about-text-content h1{
+    color: #fac031;
+    font-size: 4rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.about-text-content p{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+/* About */
+
+/* Quality */
+.quality{
+    padding: 4rem 0%;
+    background-image:url(images/Shape1.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-quality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.main-inner-quality{
+    flex: 1 1 45rem;
+}
+.quality-content{
+    padding: 0 4rem;
+}
+.quality-content h1{
+    color: #1d1d23;
+    font-size: 4rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.quality-content p{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+.qulity-image{
+    width: 100%;
+}
+.qulity-image img{
+    width: 56%;
+    object-fit: cover;
+    position: relative;
+    left: 13rem;
+}
+/* Quality */
+
+/* Gallery */
+.gallery{
+    padding: 4rem 7%;
+    background: #1d1d23;
+}
+.gallery h1{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.gallery h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.gallery h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.inner-gallery{
+    flex: 1 1 300px;
+}
+.inner-gallery .gallery-image img{
+    width: 100%;
+}
+.inner-gallery .gallery-image:hover img{
+    transform: perspective(1000px) rotateX(-4.80deg) rotateY(-10.23deg) scale3d(1.05,1.05,1.05);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+/* Gallery */
+
+/* Enjoy Our Food */
+.enjoy-our-food{
+    padding: 2rem 7%;
+    background: url(images/enjoye.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-main-content{
+    width: 40%;
+    border: 4px solid white;
+    padding: 2rem;
+}
+.food-main-content h1{
+    color: #fac031;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+.food-main-content p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 30px;
+}
+/* Enjoy Our Food */
+
+/* Menu */
+.menu{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #1d1d23;
+}
+.menu h1{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.menu h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    /* position: relative;
+    bottom: 15px; */
+}
+.menu .menu_box{
+    width: 98%;
+    margin: 0 auto;
+    grid-gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu .menu_box .menu_card{
+    width: 425px;
+    height: 520px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(236, 231, 231, 0.2);
+    color: white;
+}
+.menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card .menu_image:hover img{
+    transform: scale(1.1);
+}
+.menu .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+.menu .menu_box .menu_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+.menu .menu_box .menu_card .small_card i:hover{
+    color: #fac031;
+}
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 2.5rem;
+    color: #fac031;
+}
+.menu .menu_box .menu_card .menu_info p{
+    text-align: center;
+    margin-top: 8px;
+    font-size: large;
+}
+.menu .menu_box .menu_card .menu_info h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: large;
+}
+.menu .menu_box .menu_card .menu_info .menu_icon{
+    color: #fac031;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+}
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    font-size: large;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card .menu_info .menu_btn:hover{
+    transform: scale(1.1);
+    background: #fac031;
+    color: #000;
+}
+/* Menu */
+
+/* Review */
+.review{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #1d1d23;
+}
+.review h1{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.review h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-weight: bold;
+}
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+}
+.review .review_box{
+    width: 85%;
+    margin: 70px auto;
+    grid-gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.review .review_box .review_card{
+    width: 320px;
+    height: 520px;
+    box-shadow: 0 0 10px rgba(236, 231, 231, 0.2);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 20px;
+}
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+}
+.review .review_box .review_card:hover .review_profile img{
+    border: 5px solid #fac031;
+}
+.review .review_box .review_card .review_text{
+    text-align: center;
+}
+.review .review_box .review_card .review_text .name{
+    color: #fac031;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text .name{
+    transform: translateY(-50px);
+}
+.review .review_box .review_card .review_text .review_icon{
+    color: #fac031;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text .review_icon{
+    transform: translateY(-30px);
+}
+.review .review_box .review_card .review_text .review_social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text .review_social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+    font-size: 12px;
+}
+.review .review_box .review_card:hover .review_text p{
+    margin-top: 5px;
+}
+/* Review */
+
+/*Team*/
+.team{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #1d1d23;    
+}
+.team h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.team h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.team h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+}
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.team .team_box .profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(236, 231, 231, 0.2);
+    color: white;
+    transition: 0.4s;
+}
+.team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 460px;
+}
+.team .team_box .profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-bottom: 240px;
+}
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+.team .team_box .profile:hover .info{
+    top: 60%;
+}
+ .team .team_box .profile .info .name{
+    color: #fac031;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: large;
+}
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    font-size: large;
+}
+.team .team_box .profile .info .team_icon i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: large;
+}
+.team .team_box .profile .info .team_icon i:hover{
+    color: #fac031;
+} 
+/*Team*/
+
+/*order*/
+.order{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1d1d23;
+}
+.order .heading span{
+    color:#fac031;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.order .heading h3{
+    color:#fac031;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-left: 10px; 
+}
+.order form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    grid-gap: 15px;
+    padding:2rem;
+    background: #1d1d23;
+    box-shadow: 0 0 10px rgba(236, 231, 231, 0.2);
+    color: white;
+    width: 95%;
+}
+.order form .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:14rem;
+}
+.order form .box-container .box{
+    flex:1 1 41rem;
+}
+label{
+    color: #666;
+    font-size: 1.7rem;
+    position: relative;
+    bottom: 3.3rem;
+    left: 4rem;
+}
+#D1,#D2,#D3,#D4,#D5,#D6{
+    position: relative;
+    right: 7rem;
+}
+.order form .box-container .box .inputBox input,
+.order form .box-container .box .inputBox textarea{
+    width: 100%;
+    margin:1rem 0;
+    padding:1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color:#000;
+    border:.1rem solid #aaa;
+    text-transform: none;
+}
+.order form .box-container .box .inputBox input::placeholder,
+.order form .box-container .box .inputBox textarea::placeholder{
+    text-transform: capitalize;
+}
+.order form .box-container .box .inputBox input:focus,
+.order form .box-container .box .inputBox textarea:focus{
+    background: #fac031;
+    color:#000;
+}
+.order form .box-container .box .inputBox input:focus::placeholder,
+.order form .box-container .box .inputBox textarea:focus::placeholder{
+    color:#000;
+}
+.order form .box-container .box .inputBox textarea{
+    height: 20rem;
+    resize: none;
+}
+.order form .box-container .box .inputBox .map{
+    height: 20rem;
+    width: 100%;
+    margin:1rem 0;
+}
+.order form .box-container .box .inputBox span{
+    color:#666;
+    font-size: 2rem;
+}
+.btn{
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 250px;
+    font-size: large;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background: #fac031;
+    border-color: #fac031;
+    color: #000;
+}
+/*order*/
+
+/* Img End */
+.containerImg{
+    background-color: #1d1d23;
+}
+.before{
+    width: 97.5vw;
+}
+/* Img End */
+
+/*Footer*/
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+    background-color: #1d1d23;
+}
+.main-footer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-footer img{
+    width: 200px;
+}
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+footer .footer_main .footer_tag h2{
+    color: #fac031;
+    margin-bottom: 25px;
+    font-size: 3rem;
+}
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+    color: white;
+    font-size: large;
+}
+footer .footer_main .footer_tag a{
+    margin: 10px 0;
+    color: white;
+    font-size: large;
+    display: block;
+}
+footer .footer_main .footer_tag a:hover{
+    color: #fac031;
+}
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+    color: white;
+    font-size: large;
+}
+footer .footer_main .footer_tag i:hover{
+    color: #fac031;
+}
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size:1.5rem;
+    color: rgba(204, 204, 204, 0.767);
+}
+footer .end span{
+    color: #fac031;
+    margin-left: 10px;
+}
+/*Footer*/
+
+/*Scroll*/
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: #fac031;
+    border-radius: 15px;
+}
+/*Scroll*/
+
+/*BACK TO TOP*/
+.linkUp{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    display: none;
+    transition: 0.25s ease;
+}
+/*BACK TO TOP*/
+
+
+/*Make Responsive Page*/
+@media (max-width:1200px){
+    /* NavBar */
+    .icons div{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: #e58f00;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    /* NavBar */
+
+    /*Team*/
+    .team .team_box{
+        grid-gap: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }  
+    .team .team_box .profile:hover{
+        border-radius: 20px;
+        height: 560px;
+    }
+    /*Team*/
+}
+
+@media (max-width:960px){
+    /*Review*/
+    .review .review_box{
+        flex-wrap: wrap;
+    }
+    /*Review*/
+}
+
+@media (max-width:767px){
+    /* NavBar */
+    .header{
+        padding: 3rem;
+    }
+    .icons div{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: #e58f00;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    /* NavBar */
+
+    /*Home*/
+    .home{
+        padding-top: 100px;
+    }
+    .main-home{
+        padding: 2rem 0;
+    }
+    .home-image img{
+        transform: translate(0%, 0%);
+    }
+    .home-text-content{
+        padding: 18rem 2rem;
+        margin-top: 300px;
+    }
+    /*Home*/
+
+    /*About*/
+    .about-content .about-inner-content img{
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    /*About*/
+
+    /*Quality*/
+    .quality-content{
+        padding: 1rem 2rem;
+    }
+    .quality-content h1{
+        color: white
+    }
+    /*Quality*/
+
+    /* Enjoy Our Food */
+    .food-main-content{
+        width: 100%;
+        border: 4px solid white;
+        padding: 1rem;
+    }
+    /* Enjoy Our Food */
+
+    /*Review*/
+    .review .review_box{
+        flex-wrap: wrap;
+    }
+    .review .review_box .review_card{
+        height: 535px;
+    } 
+    /*Review*/
+
+    /*Team*/
+    .team .team_box{
+        grid-gap: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }  
+    /*Team*/
+
+    /*Footer*/
+    footer .footer_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    /*Footer*/
+}
+
+@media (max-width:360px){
+    /* NavBar */
+    .search
+    {
+        display: none;
+    }
+    /* NavBar */
+
+    .menu .menu_box .menu_card{
+        width: 400px;
+        height: 590px;
+        margin: 0 20px;
+    }
+
+    .review h1{
+        font-size: 3.5rem;
+    }
+
+    .team h1{
+        font-size: 3.5rem;
+    }
+
+    footer .footer_main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Make Responsive Page*/
