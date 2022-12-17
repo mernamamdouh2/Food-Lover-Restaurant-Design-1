@@ -13,6 +13,13 @@ html{
     font-size: 65%;
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
 /*Body*/
 
 /* NavBar */
@@ -985,24 +992,31 @@ footer .end span{
     }
     /* NavBar */
 
+    /* Menu */
     .menu .menu_box .menu_card{
         width: 400px;
         height: 590px;
         margin: 0 20px;
     }
+    /* Menu */
 
+    /* Review */
     .review h1{
         font-size: 3.5rem;
     }
+    /* Review */
 
+    /* Team */
     .team h1{
         font-size: 3.5rem;
     }
+    /* Team */
 
+    /* Footer */
     footer .footer_main{
         display: grid;
         grid-template-columns: 1fr;
     }
+    /* Footer */
 }
-
 /*Make Responsive Page*/
