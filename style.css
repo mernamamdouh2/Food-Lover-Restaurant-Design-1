@@ -980,7 +980,7 @@ footer .end span{
     /*Footer*/
 }
 
-@media (max-width:360px){
+@media (max-width:560px){
     /* NavBar */
     .search
     {
