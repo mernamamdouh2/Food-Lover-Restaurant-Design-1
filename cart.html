@@ -2,9 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="5;URL=index.html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Thanks</title>
+        <title>Food Lover Cart</title>
         
         <!-- font-awesome link here -->
         <link rel="stylesheet" href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
@@ -26,12 +25,12 @@
             <nav class="navbar">
                 <a href="index.html#home">HOME</a>
                 <a href="index.html#about">ABOUT</a>
-                <a href="gallery.html#gallery">GALLERY</a>
-                <a href="menu.html#menu">MENUS</a>
-                <a href="review.html#review">REVIEWS</a>
-                <a href="team.html#team">TEAM</a>
-                <a href="order.html#order">ORDER</a>
-                <a href="#contact">CONTACT</a>
+                <a href="index.html#gallery">GALLERY</a>
+                <a href="index.html#menu">MENUS</a>
+                <a href="index.html#review">REVIEWS</a>
+                <a href="index.html#team">TEAM</a>
+                <a href="index.html#order">ORDER</a>
+                <a href="index.html#contact">CONTACT</a>
             </nav> 
             <div class="icon">
                 <i class="fa-solid fa-search" id="searchBtn"></i>
@@ -71,12 +70,31 @@
 
             <!-- Cart -->
             <article class="cart" id="cart">
-                <h1 class="shopping-cart">Thank You</h1>
-                <div class="container-cart">              
-                    <p id="cart-buy" class="cart-buy disabled">
-                        Thank you for contacting us, your order will reach you on time...
-                         <i class="fa-regular fa-face-laugh-beam"></i>
-                    </p>
+                <h1 class="shopping-cart">Shopping Cart</h1>
+                <div class="container-cart">
+                    <p id="empty-cart" class="empty-cart">Your Cart is Empty. 
+                        <i class="fa-regular fa-face-frown"></i>
+                    </p> 
+                        
+                    <div id="cart-products" class="cart-products disabled">
+                        <!-- code js -->
+                    </div>
+
+                    <div id="cart-procedures" class="cart-procedures disabled">
+                        <div class="cart-procedures-remaining">
+                            <button id="cart-procedures-empty" class="cart-procedures-empty">Empty Cart</button>
+                        </div>
+                        <div class="cart-procedures-correctly">
+                            <div class="cart-procedures-total">
+                                <p>Total:</p>
+                                <p id="total">$10.00</p>
+                            </div>
+                            <button id="cart-procedures-buy" class="cart-procedures-buy">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <p id="cart-buy" class="cart-buy disabled">Thank you very much for your buy.
+                         <i class="fa-regular fa-face-laugh-beam"></i></p>
                 </div>
             </article>
             <!-- Cart -->
@@ -106,9 +124,9 @@
                     <h2>Quick Link</h2>
                     <a href="index.html#home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
                     <a href="index.html#about" class="links"><i class="fas fa-arrow-right"></i>About</a>
-                    <a href="gallery.html#gallery" class="links"><i class="fas fa-arrow-right"></i>Gallery</a>
-                    <a href="menu.html#menu" class="links"><i class="fas fa-arrow-right"></i>Menus</a>
-                    <a href="order.html#order" class="links"><i class="fas fa-arrow-right"></i>Order</a>
+                    <a href="index.html#gallery" class="links"><i class="fas fa-arrow-right"></i>Gallery</a>
+                    <a href="index.html#menu" class="links"><i class="fas fa-arrow-right"></i>Menus</a>
+                    <a href="index.html#order" class="links"><i class="fas fa-arrow-right"></i>Order</a>
                 </div>
                 <div class="footer_tag" id="contact">
                     <h2>Contact</h2>

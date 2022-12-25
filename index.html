@@ -23,20 +23,24 @@
                 <img src="images/logo.png" alt="logo">
             </div> 
             <nav class="navbar">
-                <a href="#Home">HOME</a>
-                <a href="#About">ABOUT</a>
-                <a href="#Gallary">GALLERY</a>
-                <a href="#Menu">MENUS</a>
-                <a href="#Review">REVIEWS</a>
-                <a href="#Team">TEAM</a>
-                <a href="#Order">ORDER</a>
-                <a href="#Contact">CONTACT</a>
+                <a class="active" href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#menu">MENUS</a>
+                <a href="#review">REVIEWS</a>
+                <a href="#team">TEAM</a>
+                <a href="#order">ORDER</a>
+                <a href="#contact">CONTACT</a>
             </nav> 
             <div class="icon">
-                <input type="search" name="search" class="search">
-                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+                <i class="fa-solid fa-search" id="searchBtn"></i>
                 <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="button-menu button-cart" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i><span id="number" class="number">0</span>
+                </a>
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="search here..." class="search">
+                </form>
             </div>
             <div class="icons">
                 <div id="menu-bar" class="fas fa-bars"></div>
@@ -44,793 +48,497 @@
         </header>
         <!-- NavBar -->
 
-        <!-- Home -->
-        <section class="home" id="Home">
-            <div class="main-home">
-                <div class="home-inner-content">
-                    <div class="home-image">
-                        <img src="images/backgroundcontent.png" alt="imgHome">
+        <section>
+            <!-- Home -->
+            <article class="home" id="home">
+                <div class="main-home">
+                    <div class="home-inner-content">
+                        <div class="home-image">
+                            <img src="images/backgroundcontent.png" alt="imgHome">
+                        </div>
+                    </div>
+                    <div class="home-inner-content">
+                        <div class="home-text-content">
+                            <h1>Contact Us For Best Breakfast</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
+                            <a href="#contact">contact us</a>
+                        </div>
                     </div>
                 </div>
-                <div class="home-inner-content">
-                    <div class="home-text-content">
-                        <h1>Contact Us For Best Breakfast</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
-                        <a href="#Contact">contact us</a>
+            </article>
+            <!-- Home -->
+
+            <!-- About -->
+            <article id="about" class="about">
+                <div class="main-about">
+                    <div class="about-content">
+                        <div class="about-inner-content">
+                            <img class="myimageabout" src="images/Aboutus.png" alt="imgAbout">
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-inner-content">
+                            <div class="about-text-content">
+                                <h1>About us</h1>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure sunt assumenda quaerat fugiat nesciunt at, provident quae ipsa! Amet explicabo molestiae perspiciatis ut provident mollitia reprehenderit omnis fuga modi voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi doloremque officiis alias similique beatae illum necessitatibus aliquam, hic, digniss</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </article>
+            <!-- About -->
+
+            <!-- Quality -->
+            <article class="quality" id="quality">
+                <div class="main-quality">
+                    <div class="main-inner-quality">
+                        <div class="quality-content">
+                            <h1>Our food quality</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia obcaecati architecto corporis fugit magni molestiae, itaque molestias beatae quas, eveniet nesciunt quia? Molestias, ab error vitae facere quos qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi omnis itaque commodi pariatur quia, minima ullam sunt. Sunt, natus magni laborum ipsam, dolor reprehenderit exercitationem consectetur nesciunt error iure odit!</p>
+                        </div>
+                    </div>
+                    <div class="main-inner-quality">
+                        <div class="quality-content qulity-image">
+                            <img src="images/quality.png" alt="imgQuality">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Quality -->
+
+            <!-- Gallery -->
+            <article class="gallery" id="gallery">
+                <h1>Our<span>Gallery</span></h1>
+                <div class="main-gallery">
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallery1.png" alt="photo1">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallery2.png" alt="photo2">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallery5.png" alt="photo3">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/Hot_dog.jpg" alt="photo4">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/food-galler-img-1.jpg" alt="photo5">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/chocolate_Drink.jpg" alt="photo6">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/food-galler-img-5.jpg" alt="photo7">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/food-galler-img-6.jpg" alt="photo8">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/food-galler-img-3.jpg" alt="photo9">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/lasagna.webp" alt="photo10">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/sandwich.jpg" alt="photo11">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_4.jpg" alt="photo12">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_5.jpg" alt="photo13">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_6.jpg" alt="photo14">
+                        </div>
+                    </div>
+                    
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/pasta.jpg" alt="photo15">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/Spanchi.jpg" alt="photo16">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_1.jpg" alt="photo17">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_2.jpg" alt="photo18">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/juse.jpg" alt="photo19">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/menu-1.jpg" alt="photo20">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/menu-4.jpg" alt="photo21">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Gallery -->
+
+            <!-- Enjoy Our Food -->
+            <article class="enjoy-our-food">
+                <div class="food-main-content">
+                    <h1>enjoy our food</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem sit nostrum pariatur perferendis soluta saepe nam eveniet velit exercitationem iusto, molestias sapiente laborum? Hic, eaque. Voluptatum sit incidunt ipsa.</p>
+                </div>
+            </article>
+            <!-- Enjoy Our Food -->
+
+            <!-- Menu -->
+            <article class="menu" id="menu">
+                <h1 class="title-product">Our<span>Menu</span></h1>
+                <div id="container-products" class="container-products">
+                    <!-- code js -->
+                </div>
+            </article>
+            <!-- Menu -->
+
+            <!--Review-->
+            <article class="review" id="review">
+                <h1>Customer<span>Review</span></h1>
+                <div class="review_box">
+                    <div class="review_card">
+                        <div class="review_profile">
+                            <img src="images/review_1.png" alt="review1">
+                        </div>
+                        <div class="review_text">
+                            <h2 class="name">Mary Ali</h2>
+                            <div class="review_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="review_social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellents quam facer 
+                                bandit's in fugit tempore necessitating aliquot. Id adiposis, rem corrupts 
+                                asperities distinction selectus quae quia tenter total laboriously quam. Lorem ipsum, 
+                                dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <div class="review_profile">
+                            <img src="images/review_2.png" alt="review2">
+                        </div>
+                        <div class="review_text">
+                            <h2 class="name">John Deo</h2>
+                            <div class="review_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="review_social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                                blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                                asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                                dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <div class="review_profile">
+                            <img src="images/review_3.png" alt="review3">
+                        </div>
+                        <div class="review_text">
+                            <h2 class="name">Sara Hassan</h2>
+                            <div class="review_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="review_social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                                blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                                asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                                dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review_card">
+                        <div class="review_profile">
+                            <img src="images/review_4.png" alt="review4">
+                        </div>
+                        <div class="review_text">
+                            <h2 class="name">Jozef Adel</h2>
+                            <div class="review_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="review_social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                                blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                                asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                                dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--Review-->
+
+            <!--Team-->
+            <article class="team" id="team">
+                <h1>Our<span>Team</span></h1>
+                <div class="team_box">
+                    <div class="profile" id="Karim Mohsen">
+                        <img src="images/chef1.png" alt="chef1">
+                        <div class="info">
+                            <h2 class="name">Chef "Karim Mohsen"</h2>
+                            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="team_icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile" id="Mona Mohamed">
+                        <img src="images/chef2.png" alt="chef2">
+                        <div class="info">
+                            <h2 class="name">Chef "Mona Mohamed"</h2>
+                            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="team_icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile" id="Ali Ahmed">
+                        <img src="images/chef3.jpg" alt="chef3">
+                        <div class="info">
+                            <h2 class="name">Chef "Ali Ahmed"</h2>
+                            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="team_icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile" id="Abdel-Rahman Ali">
+                        <img src="images/chef4.jpg" alt="chef4">
+                        <div class="info">
+                            <h2 class="name">Chef "Abdel-Rahman Ali"</h2>
+                            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="team_icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article> 
+            <!--Team-->
+
+            <!--Order-->
+            <article class="order" id="order">
+                <div class="heading">
+                    <span>order now</span>
+                    <h3>fast home delivery</h3>
+                </div>
+                <form action="Thanks.html" method="Get">
+                    <div class="box-container">
+                        <div class="box">
+                            <div class="inputBox">
+                                <span>full name</span>
+                                <input type="text" name="fullName" placeholder="enter your name" required pattern="^([a-zA-Z]{3,})+\s+([a-zA-Z\s]{3,})+$">
+                            </div>
+                            <div class="inputBox">
+                                <span>food name</span>
+                                <input type="text" name="foodName" placeholder="food you want" required list="foodName">
+                                <datalist id="foodName">
+                                    <option value="Chicken Buger1"></option>
+                                    <option value="Double beef Buger1"></option>
+                                    <option value="beef Buger"></option>
+                                    <option value="Chicken Buger2"></option>
+                                    <option value="Snacks1"></option>
+                                    <option value="Cold Meat"></option>
+                                    <option value="Shrimp"></option>
+                                    <option value="Crispy Chicken"></option>
+                                    <option value="Double Beef Burger2"></option>
+                                    <option value="Snacks2"></option>
+                                    <option value="Chicken & Snacks"></option>
+                                    <option value="Fish & Shrimp"></option>
+                                </datalist>
+                            </div>
+                            <div class="inputBox">
+                                <span>order details(specifics with food)</span> 
+                                <div>
+                                    <span style="display: inline-block;">
+                                        <input id="D1" type="checkbox" name="orderDetails1" value="1">
+                                        <label for="D1">Mozzarella</label>
+                                        <input id="D2" type="checkbox" name="orderDetails2" value="2">
+                                        <label for="D2">Tahini</label>
+                                    </span>
+                                    <span style="display: inline-block;">
+                                        <input id="D3" type="checkbox" name="orderDetails3" value="3">
+                                        <label for="D3">Hot Sauce</label>
+                                        <input id="D4" type="checkbox" name="orderDetails4" value="4">
+                                        <label for="D4">Katchup</label>
+                                    </span>
+                                </div>       
+                            </div>
+                            <div class="inputBox">
+                                <span>your address</span>
+                                <textarea name="yourAddress" placeholder="enter your address" id="yourAddress" cols="20" rows="10" required></textarea>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="inputBox">
+                                <span>number</span>
+                                <input type="tel" name="yourNumber" placeholder="enter your number like:0201xxxxxxxxx" pattern="^(02)(010|012|011|015)\d{8}$" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>how many</span>
+                                <input type="number" name="numberOrder" placeholder="how many you want" required min=1 max=50>
+                            </div>
+                            <div class="inputBox">
+                                <span>when you want</span>
+                                <input type="datetime-local" name="wantIt" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>our address</span>
+                                <input type="text" id="inputCountry" name="country" placeholder="choice the nearest branch" required list="country" onchange="goPosition()">
+                                <datalist id="country">
+                                    <option id="Egypt" value="Egypt"></option>
+                                    <option id="USA" value="USA"></option>
+                                    <option id="Chaina" value="Chaina"></option>
+                                    <option id="Japan" value="Japan"></option>
+                                    <option id="Italy" value="Italy"></option>
+                                </datalist>
+                                <iframe class="map" id="map" name="ourLocation" allowfullscreen="" loading="lazy"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60307.59083109428!2d72.840725!3d19.141651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1642222128240!5m2!1sen!2sin"></iframe> 
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="order now" class="btn">
+
+                </form>
+            </article>
+            <!--Order-->
+
+            <!--Img End -->
+            <article class="containerImg">
+                <img src="images/Picture1.png" alt="before" class="before">
+            </article>
+            <!--Img End -->
         </section>
-        <!-- Home -->
-
-        <!-- About -->
-        <section id="About" class="about">
-            <div class="main-about">
-                <div class="about-content">
-                    <div class="about-inner-content">
-                        <img class="myimageabout" src="images/Aboutus.png" alt="imgAbout">
-                    </div>
-                </div>
-                <div class="about-content">
-                    <div class="about-inner-content">
-                        <div class="about-text-content">
-                            <h1>About us</h1>
-                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure sunt assumenda quaerat fugiat nesciunt at, provident quae ipsa! Amet explicabo molestiae perspiciatis ut provident mollitia reprehenderit omnis fuga modi voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi doloremque officiis alias similique beatae illum necessitatibus aliquam, hic, digniss</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About -->
-
-        <!-- Quality -->
-        <section class="quality">
-            <div class="main-quality">
-                <div class="main-inner-quality">
-                    <div class="quality-content">
-                        <h1>Our food quality</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia obcaecati architecto corporis fugit magni molestiae, itaque molestias beatae quas, eveniet nesciunt quia? Molestias, ab error vitae facere quos qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi omnis itaque commodi pariatur quia, minima ullam sunt. Sunt, natus magni laborum ipsam, dolor reprehenderit exercitationem consectetur nesciunt error iure odit!</p>
-                    </div>
-                </div>
-                <div class="main-inner-quality">
-                    <div class="quality-content qulity-image">
-                        <img src="images/quality.png" alt="imgQuality">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Quality -->
-
-        <!-- Gallery -->
-        <section class="gallery" id="Gallary">
-            <h1>Our<span>Gallery</span></h1>
-            <div class="main-gallery">
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallery1.png" alt="photo1">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallery2.png" alt="photo2">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallery5.png" alt="photo3">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/Hot_dog.jpg" alt="photo4">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/food-galler-img-1.jpg" alt="photo5">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/chocolate_Drink.jpg" alt="photo6">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/food-galler-img-5.jpg" alt="photo7">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/food-galler-img-6.jpg" alt="photo8">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/food-galler-img-3.jpg" alt="photo9">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/lasagna.webp" alt="photo10">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/sandwich.jpg" alt="photo11">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_4.jpg" alt="photo12">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_5.jpg" alt="photo13">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_6.jpg" alt="photo14">
-                    </div>
-                </div>
-                
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/pasta.jpg" alt="photo15">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/Spanchi.jpg" alt="photo16">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_1.jpg" alt="photo17">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_2.jpg" alt="photo18">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/juse.jpg" alt="photo19">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/menu-1.jpg" alt="photo20">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/menu-4.jpg" alt="photo21">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Gallery -->
-
-        <!-- Enjoy Our Food -->
-        <section class="enjoy-our-food">
-            <div class="food-main-content">
-                <h1>enjoy our food</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem sit nostrum pariatur perferendis soluta saepe nam eveniet velit exercitationem iusto, molestias sapiente laborum? Hic, eaque. Voluptatum sit incidunt ipsa.</p>
-            </div>
-        </section>
-        <!-- Enjoy Our Food -->
-
-        <!-- Menu -->
-        <section class="menu" id="Menu">
-            <h1>Our<span>Menu</span></h1>
-            <div class="menu_box">
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu1.webp" alt="menu1">
-                    </div>
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <div class="menu_info">
-                        <h2>Chicken Buger1</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$25.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu2.webp" alt="menu2">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Double beef Buger1</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$30.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu3.webp" alt="menu3">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>beef Buger</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$20.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu4.webp" alt="menu4">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Chicken Buger2</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$20.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu5.webp" alt="menu5">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Snacks1</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$10.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu6.webp" alt="menu6">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Cold Meat</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$40.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu7.webp" alt="menu7">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Shrimp</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$45.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu8.webp" alt="menu8">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Crispy Chicken</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$35.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu9.webp" alt="menu9">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Double Beef Burger2</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$30.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu10.webp" alt="menu10">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Snacks2</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$10.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu11.webp" alt="menu11">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Chicken & Snacks</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$35.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-    
-                <div class="menu_card">
-                    <div class="menu_image">
-                        <img src="images/menu12.webp" alt="menu12">
-                    </div>
-    
-                    <div class="small_card">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-    
-                    <div class="menu_info">
-                        <h2>Fish & Shrimp</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
-                        </p>
-                        <h3>$50.00</h3>
-                        <div class="menu_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="menu_btn">Order Now</a>
-                    </div>
-                </div> 
-            </div>
-        </section>
-        <!-- Menu -->
-
-        <!--Review-->
-        <section class="review" id="Review">
-            <h1>Customer<span>Review</span></h1>
-            <div class="review_box">
-                <div class="review_card">
-                    <div class="review_profile">
-                        <img src="images/review_1.png" alt="review1">
-                    </div>
-                    <div class="review_text">
-                        <h2 class="name">Mary Ali</h2>
-                        <div class="review_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="review_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
-                            blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
-                            asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
-                            dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="review_card">
-                    <div class="review_profile">
-                        <img src="images/review_2.png" alt="review2">
-                    </div>
-                    <div class="review_text">
-                        <h2 class="name">John Deo</h2>
-                        <div class="review_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="review_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
-                            blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
-                            asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
-                            dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="review_card">
-                    <div class="review_profile">
-                        <img src="images/review_3.png" alt="review3">
-                    </div>
-                    <div class="review_text">
-                        <h2 class="name">Sara Hassan</h2>
-                        <div class="review_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="review_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
-                            blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
-                            asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
-                            dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="review_card">
-                    <div class="review_profile">
-                        <img src="images/review_4.png" alt="review4">
-                    </div>
-                    <div class="review_text">
-                        <h2 class="name">Jozef Adel</h2>
-                        <div class="review_icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="review_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
-                            blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
-                            asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
-                            dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Review-->
-
-        <!--Team-->
-        <section class="team" id="Team">
-            <h1>Our<span>Team</span></h1>
-            <div class="team_box">
-                <div class="profile">
-                    <img src="images/chef1.png" alt="chef1">
-                    <div class="info">
-                        <h2 class="name">Chef "Karim Mohsen"</h2>
-                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="team_icon">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="profile">
-                    <img src="images/chef2.png" alt="chef2">
-                    <div class="info">
-                        <h2 class="name">Chef "Mona Mohamed"</h2>
-                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="team_icon">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="profile">
-                    <img src="images/chef3.jpg" alt="chef3">
-                    <div class="info">
-                        <h2 class="name">Chef "Ali Ahmed"</h2>
-                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="team_icon">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="profile">
-                    <img src="images/chef4.jpg" alt="chef4">
-                    <div class="info">
-                        <h2 class="name">Chef "Abdel-Rahman Ali"</h2>
-                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="team_icon">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> 
-        <!--Team-->
-
-        <!--Order-->
-        <section class="order" id="Order">
-            <div class="heading">
-                <span>order now</span>
-                <h3>fast home delivery</h3>
-            </div>
-            <form action="Thanks.html" method="Get">
-                <div class="box-container">
-                    <div class="box">
-                        <div class="inputBox">
-                            <span>full name</span>
-                            <input type="text" name="fullName" placeholder="enter your name" required pattern="^([a-zA-Z]{3,})+\s+([a-zA-Z\s]{3,})+$">
-                        </div>
-                        <div class="inputBox">
-                            <span>food name</span>
-                            <input type="text" name="foodName" placeholder="food you want" required list="foodName" autocomplete="off">
-                            <datalist id="foodName">
-                                <option value="Chicken Buger1"></option>
-                                <option value="Double beef Buger1"></option>
-                                <option value="beef Buger"></option>
-                                <option value="Chicken Buger2"></option>
-                                <option value="Snacks1"></option>
-                                <option value="Cold Meat"></option>
-                                <option value="Shrimp"></option>
-                                <option value="Crispy Chicken"></option>
-                                <option value="Double Beef Burger2"></option>
-                                <option value="Snacks2"></option>
-                                <option value="Chicken & Snacks"></option>
-                                <option value="Fish & Shrimp"></option>
-                            </datalist>
-                        </div>
-                        <div class="inputBox">
-                            <span>order details(specifics with food)</span> 
-                            <div>
-                                <span style="display: inline-block;">
-                                    <input id="D1" type="checkbox" name="orderDetails1" value="1">
-                                    <label for="D1">Mozzarella</label>
-                                    <input id="D2" type="checkbox" name="orderDetails2" value="2">
-                                    <label for="D2">Tahini</label>
-                                </span>
-                                <span style="display: inline-block;">
-                                    <input id="D3" type="checkbox" name="orderDetails3" value="3">
-                                    <label for="D3">Hot Sauce</label>
-                                    <input id="D4" type="checkbox" name="orderDetails4" value="4">
-                                    <label for="D4">Katchup</label>
-                                </span>
-                            </div>       
-                        </div>
-                        <div class="inputBox">
-                            <span>your address</span>
-                            <textarea name="yourAddress" placeholder="enter your address" id="yourAddress" cols="30" rows="10" required></textarea>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="inputBox">
-                            <span>number</span>
-                            <input type="tel" name="yourNumber" placeholder="enter your number like:0201xxxxxxxxx" pattern="^(02)(010|012|011|015)\d{8}$" required>
-                        </div>
-                        <div class="inputBox">
-                            <span>how many</span>
-                            <input type="number" name="numberOrder" placeholder="how many you want" required min=1 max=50>
-                        </div>
-                        <div class="inputBox">
-                            <span>when you want</span>
-                            <input type="datetime-local" name="wantIt" required>
-                        </div>
-                        <div class="inputBox">
-                            <span>our address</span>
-                            <iframe class="map" name="yourLocation" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60307.59083109428!2d72.840725!3d19.141651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1642222128240!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <input type="submit" value="order now" class="btn">
-
-            </form>
-        </section>
-        <!--Order-->
-
-        <!--Img End -->
-        <div class="containerImg">
-            <img src="images/Picture1.png" alt="before" class="before">
-        </div>
-        <!--Img End -->
 
         <!--Footer-->
         <footer>
             <div class="main-footer">
-                <div class="footer-logo"><img src="images/footerlogo.png" alt=""></div>
+                <div class="footer-logo"><img src="images/footerlogo.png" alt="logo"></div>
             </div>
             <div class="footer_main">
                 <div class="footer_tag">
                     <h2>Location</h2>
-                    <p>Egypt</p>
-                    <p>USA</p>
-                    <p>Chaina</p>
-                    <p>Japan</p>
-                    <p>Italy</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Egypt</p>
+                    <p><i class="fas fa-map-marker-alt"></i>USA</p>
+                    <p><i class="fas fa-map-marker-alt"></i>China</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Japan</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Italy</p>
                 </div>
                 <div class="footer_tag">
                     <h2>Quick Link</h2>
-                    <a href="#Home">Home</a>
-                    <a href="#About">About</a>
-                    <a href="#Gallary">Gallary</a>
-                    <a href="#Menu">Menus</a>
-                    <a href="#Order">Order</a>
+                    <a href="#home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="#about" class="links"><i class="fas fa-arrow-right"></i>About</a>
+                    <a href="#gallery" class="links"><i class="fas fa-arrow-right"></i>Gallery</a>
+                    <a href="#menu" class="links"><i class="fas fa-arrow-right"></i>Menus</a>
+                    <a href="#order" class="links"><i class="fas fa-arrow-right"></i>Order</a>
                 </div>
-                <div class="footer_tag" id="Contact">
+                <div class="footer_tag" id="contact">
                     <h2>Contact</h2>
-                    <p>+20 12 4568 102</p>
-                    <p>+94 25 5568456</p>
-                    <a href="mailto:mernamamdouh2@gmail.com?subject=Hello" target="_blank">mernamamdouh2@gmail.com</a>
-                    <a href="mailto:foodloverR@gmail.com?subject=Hello" target="_blank">foodloverR@gmail.com</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+20 12 4568 102</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+94 25 5568456</a>
+                    <a href="mailto:mernamamdouh2@gmail.com?subject=Hello" target="_blank" class="links"><i class="fas fa-envelope"></i>merna.m2@gmail.com</a>
+                    <a href="mailto:foodloverR@gmail.com?subject=Hello" target="_blank" class="links"><i class="fas fa-envelope"></i>foodloverR@gmail.com</a>
                 </div>
                 <div class="footer_tag">
                     <h2>Our Service</h2>
@@ -846,6 +554,7 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                 </div>
             </div>
+            
             <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Merna Mamdouh</span></p>
         </footer>
         <!--Footer-->
@@ -862,10 +571,15 @@
         </a>      
         <!--BACK TO TOP-->
 
-
+        <!-- Loading -->
+        <div class="loader-container">
+            <img src="images/loader.gif" alt="load">
+        </div>
+        <!-- Loading -->
+       
         <!-- scroll reveal javascript link -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-       
+
         <!-- javascript link here -->
         <script src="script.js"></script>
 
